@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API dos</title>
+    <!-- https://bootswatch.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <section class="col-12 col-md-6">
+                <h1 class="text-primary">API SHORT URL</h1>
+                <form id="formulario">
+                    <input id="inputText" type="text" class="form-control mb-2" placeholder="Ingrese URL">
+                    <span id="error" class="d-block mb-2 d-none">Ya existe el enlace!</span>
+                    <button class="btn btn-primary">Acortar URL</button>
+                </form>
+
+                <div id="resultado" class="mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="mb-0"><a href="">enlace</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
